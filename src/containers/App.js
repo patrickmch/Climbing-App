@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 
 import PrimaryNav from '../components/PrimaryNav'
+import SecondaryNav from '../components/SecondaryNav'
 
 class App extends Component {
   render() {
@@ -9,9 +10,12 @@ class App extends Component {
 
     return (
       <div className="app">
-        <PrimaryNav title={'Climbing App'}/>
-
+        <nav className="nav">
+          <PrimaryNav title={'Climbing App'}/>
+          <SecondaryNav/>
+        </nav>
         <main>
+          <p>SOME SWEET CONTENT!</p>
         </main>
       </div>
     );
